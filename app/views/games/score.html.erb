@@ -1,0 +1,10 @@
+<h1>Result</h1>
+
+<% if @the_score == true %>
+  <p><%= "Congratulations!"%><strong><%=" #{@word.upcase}"%></strong> <%="is a valid English word!" %></p>
+<% else %>
+  <p>Sorry but no!</p>
+<% end %>
+
+
+<button class="button"><%= link_to "Play again", new_path %></button>
